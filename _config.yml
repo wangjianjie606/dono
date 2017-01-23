@@ -1,0 +1,5 @@
+paginate: 10                                #分页时每页博文数量
+author:                                     #自定义常亮
+  name: 王健杰
+  email: wangjianjie606@gmail.com
+baseurl: /dono
