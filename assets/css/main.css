@@ -1,8 +1,9 @@
+@CHARSET "UTF-8";
 #mainDiv {
 	
 }
 
-#leftDiv{
+#leftDiv #sidebar{
 	width:240px;
 	height:auto;
 	background:black;
