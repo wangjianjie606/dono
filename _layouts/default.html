@@ -10,11 +10,13 @@
 	</div>
   
     <div id="mainDiv">
-      <div class="pageTitle">{{ page.title }}</div>
-      {{ content }}
-      <div style="text-align:right;height:30px;margin-top:30px;">{{ page.date | date_to_string }}</div>
-	  <div class="btnDiv">
-	    <button id="backBtn">返回</button>
+	  <div style="text-align:center;">
+		<div class="pageTitle">{{ page.title }}</div>
+	    {{ content }}
+        <div style="text-align:right;height:30px;margin-top:30px;margin-right:30px;">{{ page.date | date_to_string }}</div>
+	    <div class="btnDiv">
+	      <button id="backBtn">返回</button>
+	    </div>
 	  </div>
     </div>
   </body>
