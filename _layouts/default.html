@@ -13,12 +13,12 @@
  
       {{ content }}
   
-	  <button id="btn">假装是个按钮</button>
+	  <button id="btn">返回</button>
     </div>
   </body>
   <script type="text/javascript">
 	$('#btn').on('click',function(){
-	  alert("working!");
+	  history.go(-1);
 	})
   </script>
 </html>
