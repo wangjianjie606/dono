@@ -1,8 +1,9 @@
 @CHARSET "UTF-8";
 #mainDiv {
-  position: absolute;
-  left: 280px;
-  top: 40px;
+  float:left;
+  margin-left:20px;
+  margin-top:50px;
+  width:780px;
 }
 
 #leftDiv #sidebar{
