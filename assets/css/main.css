@@ -7,7 +7,7 @@
   background:rgba(123,32,22,0.1);
 }
 
-#leftDiv #sidebar{
+#leftDiv,#sidebar{
   width:280px;
   height:620px;
 }
