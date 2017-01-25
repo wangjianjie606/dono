@@ -4,6 +4,7 @@
   margin-left:20px;
   margin-top:50px;
   width:780px;
+  background:rgba(123,32,22,0.1);
 }
 
 #leftDiv #sidebar{
@@ -11,3 +12,8 @@
   height:620px;
   background:rgba(0,0,0,0.1);
 }
+
+#leftDiv{
+  float:left;
+}
+
