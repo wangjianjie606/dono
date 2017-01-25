@@ -2,7 +2,7 @@
 #mainDiv {
   float:left;
   margin-left:20px;
-  margin-top:50px;
+  margin-top:30px;
   width:780px;
   background:rgba(123,32,22,0.1);
 }
@@ -20,9 +20,9 @@
 .pageTitle{
   text-align:center;
   font-size:35px;
-  font-family:"楷体", Monaco
+  font-family:"KaiTi", "楷体", "Monaco"
 }
 
 body{
-  font-family: "宋体", Monaco;
+  font-family: "Monaco", "SimSun", "宋体";
 }
