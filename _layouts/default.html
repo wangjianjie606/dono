@@ -12,12 +12,14 @@
     <div id="mainDiv">
       <div class="pageTitle">{{ page.title }}</div>
       {{ content }}
-      <div style="text-align:right">{{ page.date | date_to_string }}</div>
-	  <button id="btn" >返回</button>
+      <div style="text-align:right;height:50px;margin-top:29px;">{{ page.date | date_to_string }}</div>
+	  <div class="btnDiv">
+	    <button id="backBtn">返回</button>
+	  </div>
     </div>
   </body>
   <script type="text/javascript">
-	$('#btn').on('click',function(){
+	$('#backBtn').on('click',function(){
 	  history.go(-1);
 	})
   </script>

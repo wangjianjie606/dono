@@ -26,3 +26,12 @@
 body{
   font-family: "Monaco", "SimSun", "宋体";
 }
+
+.btnDiv{
+  width:98%;
+  margin-top:5px;
+  padding: 5px;
+  text-align: center;
+  height:30px;
+  padding:5px;
+}
