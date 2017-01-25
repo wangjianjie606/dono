@@ -36,3 +36,9 @@ body{
   height:30px;
   padding:5px;
 }
+
+#content{
+  text-align:left;
+  padding:10px;
+  margin-left:5px;
+}
