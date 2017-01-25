@@ -17,3 +17,11 @@
   float:left;
 }
 
+.pageTitle{
+  text-align:center;
+  font-size:35px;
+}
+
+body{
+  font-family: 楷体;
+}
