@@ -20,8 +20,9 @@
 .pageTitle{
   text-align:center;
   font-size:35px;
+  font-family:"楷体", Monaco
 }
 
 body{
-  font-family: 楷体;
+  font-family: "宋体", Monaco;
 }
