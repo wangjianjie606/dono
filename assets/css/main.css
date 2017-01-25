@@ -1,10 +1,12 @@
 @CHARSET "UTF-8";
 #mainDiv {
-	
+  position: absolute;
+  left: 400px;
+  top: 20px;
 }
 
 #leftDiv #sidebar{
-  width:240px;
-  height:auto;
-  background:black;
+  width:280px;
+  height:620px;
+  background:rgba(0,0,0,0.1);
 }
