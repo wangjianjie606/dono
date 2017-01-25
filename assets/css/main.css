@@ -3,18 +3,18 @@
   float:left;
   margin-left:20px;
   margin-top:30px;
-  width:900px;
+  width:1000px;
   background:rgba(123,32,22,0.1);
 }
 
 #leftDiv #sidebar{
   width:280px;
   height:620px;
-  background:rgba(0,0,0,0.1);
 }
 
 #leftDiv{
   float:left;
+  background:rgba(0,0,0,0.1);
 }
 
 .pageTitle{
