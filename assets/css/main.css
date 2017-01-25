@@ -7,9 +7,13 @@
   background:rgba(123,32,22,0.1);
 }
 
-#leftDiv,#sidebar{
+#sidebar{
   width:280px;
   height:620px;
+}
+
+#sidebar{
+  float:left;
 }
 
 #leftDiv{
@@ -51,6 +55,7 @@ body{
   color:white;
   text-align:center;
   margin-right:15px;
+  margin-top:10px;
 }
 
 #closeMenuBtn{
