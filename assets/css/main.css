@@ -1,8 +1,8 @@
 @CHARSET "UTF-8";
 #mainDiv {
   position: absolute;
-  left: 400px;
-  top: 20px;
+  left: 280px;
+  top: 40px;
 }
 
 #leftDiv #sidebar{
