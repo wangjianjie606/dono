@@ -7,13 +7,15 @@
   background:rgba(123,32,22,0.1);
 }
 
-#leftDiv,#sidebar{
+#leftDiv{
   width:21%;
   height:620px;
 }
 
 #sidebar{
   float:left;
+  width:98%;
+  height:620px;  
 }
 
 #leftDiv{
