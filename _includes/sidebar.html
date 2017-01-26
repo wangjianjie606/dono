@@ -1,7 +1,7 @@
 <div id="sidebar">
   <div id="sidebarContent" class="openSidebarContent" style="margin-top:15px;">
     <p style="margin-left:10px;font-size:18px;"><a href="{{ site.baseurl }}">首页</a></p>
-    <p >最新文章</p>
+    <p style="margin-left:10px;font-size:18px">最新文章</p>
       <ul>
         {% for post in site.posts %}
           <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}?{{site.time}}">{{ post.title }}</a></li>
