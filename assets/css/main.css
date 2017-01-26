@@ -15,7 +15,6 @@
 
 #leftDiv{
   float:left;
-  background:rgba(0,0,0,0.1);
   height:620px;
 }
 
@@ -71,11 +70,13 @@ body{
 }
 
 .openMenu{
-  width:21%;	
+  width:21%;
+  background:rgba(0,0,0,0.1);
 }
 
 .closeMenu{
   width:2%;
+  background:rgba(0,0,0,0.8);
 }
 
 .openSidebarContent{
