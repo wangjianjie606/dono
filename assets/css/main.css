@@ -61,7 +61,13 @@ body{
 }
 
 .closeMenuBtn{
-  
+  height:20px;
+  width:60px;
+  background:rgba(0,0,0,0.8);
+  color:white;
+  text-align:center;
+  cursor:pointer;
+  margin-top:10px;
 }
 
 .openMenu{
@@ -69,5 +75,13 @@ body{
 }
 
 .closeMenu{
-  width:5%;
+  width:2%;
+}
+
+.openSidebarContent{
+  display:block;
+}
+
+.closeSidebarContent{
+  display:none;
 }
