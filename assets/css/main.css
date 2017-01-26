@@ -3,12 +3,12 @@
   float:left;
   margin-left:20px;
   margin-top:30px;
-  width:1000px;
+  width:76%;
   background:rgba(123,32,22,0.1);
 }
 
 #leftDiv,#sidebar{
-  width:280px;
+  width:21%;
   height:620px;
 }
 
@@ -61,4 +61,12 @@ body{
 
 .closeMenuBtn{
   
+}
+
+.openMenu{
+	
+}
+
+.closeMenu{
+	
 }
