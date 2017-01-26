@@ -7,11 +7,6 @@
   background:rgba(123,32,22,0.1);
 }
 
-#leftDiv{
-  width:21%;
-  height:620px;
-}
-
 #sidebar{
   float:left;
   width:98%;
@@ -21,6 +16,7 @@
 #leftDiv{
   float:left;
   background:rgba(0,0,0,0.1);
+  height:620px;
 }
 
 .pageTitle{
@@ -49,16 +45,19 @@ body{
   margin-left:5px;
 }
 
+#menuBtn{
+}
+
 .openMenuBtn{
-  width:60px;
   height:20px;
-  float:right;
+  width:60px;
   background:rgba(0,0,0,0.8);
   color:white;
   text-align:center;
+  cursor:pointer;  
+  float:right;
   margin-right:15px;
   margin-top:10px;
-  cursor:pointer;
 }
 
 .closeMenuBtn{
@@ -66,9 +65,9 @@ body{
 }
 
 .openMenu{
-	
+  width:21%;	
 }
 
 .closeMenu{
-	
+  width:5%;
 }
