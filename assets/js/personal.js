@@ -9,10 +9,12 @@ function blogInit(){
 			$("#menuBtn").attr("class","closeMenuBtn");
 			$("#leftDiv").attr("class","closeMenu");
 			$("#sidebarContent").attr("class","closeSidebarContent");
+			$("#mainDiv").attr("class","bigMainDiv");
 		}else{
 			$("#menuBtn").attr("class","openMenuBtn");
 			$("#leftDiv").attr("class","openMenu");
 			$("#sidebarContent").attr("class","openSidebarContent");
+			$("#mainDiv").attr("class","smallMainDiv");
 		}
 	});
 }
