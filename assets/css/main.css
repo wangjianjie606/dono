@@ -96,8 +96,7 @@ body{
 
 #homeBodyDiv{
 	width:1000px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:0px;
-	margin-top:0px;
+	margin-left:646px;
+	
+	float:left
 }
