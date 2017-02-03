@@ -59,7 +59,7 @@
 	$(window).scroll(()=>{
 		const scrollY = window.scrollY;
 		if(scrollY<300){
-			$("#homeMenuBtnDiv").css("top",parseInt($("#homeMenuBtnDiv").css("top").substr(0,$("#homeMenuBtnDiv").css("left").length-2))-scrollY+"px");
+			$("#homeMenuBtnDiv").css("top",300-scrollY+"px");
 		}else if($("#homeMenuBtnDiv").css("left")!="300px"){
 			$("#homeMenuBtnDiv").css("top","300px");
 		}
