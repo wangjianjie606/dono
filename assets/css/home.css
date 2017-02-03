@@ -1,4 +1,8 @@
 @CHARSET "UTF-8";
+body{
+  font-family: "Monaco", "SimSun", "宋体";
+}
+
 #homeBodyDiv{
 	width:1000px;
 	margin-left:175px;
@@ -37,11 +41,7 @@
 }
 
 #homeMenuBtn:active{
-	background-color:rgba(83,30,99,0.5);
-}
-
-body{
-  font-family: "Monaco", "SimSun", "宋体";
+	background-color:rgba(2,0,70,0.5);
 }
 
 .btn{
@@ -49,3 +49,18 @@ body{
 	padding: 4px 10px;
 	text-align: center;
 }
+
+.homeContentTitle{
+	text-decoration:none;
+	color:#5353ce;
+}
+
+.homeContentTitle:hover:active{
+	text-decoration:underline;
+	color:#ec9494;
+}
+
+.homeContentTitle:visited{
+	color:#5d5d82;
+}
+
