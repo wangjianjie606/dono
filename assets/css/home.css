@@ -12,7 +12,7 @@
 	float:left;
 }
 
-#homeMenuBtn{
+#homeMenuBtnDiv{
 	position:absolute;
 	left:1200px;
 	margin-top:50px;
@@ -21,6 +21,11 @@
 	height:30px;
 	line-height:30px;
 	font-size:20px;
+}
+
+#homeMenuBtn{
+	width:70px;
+	height:30px;
 	border-radius:6px;
 	color:white;
 	background-color:rgba(0, 0, 0, 0.2);
@@ -31,7 +36,7 @@
 	background-color:rgba(0, 0, 0, 0.8);
 }
 
-#homeMenuBtn:visited{
+#homeMenuBtn:active{
 	background-color:rgba(83,30,99,0.5);
 }
 
