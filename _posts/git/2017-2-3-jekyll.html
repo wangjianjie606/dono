@@ -1,0 +1,60 @@
+<div>
+统计字数
+<p>
+{{ page.content | number_of_words }}
+</p>
+</div>
+
+<div>
+将数组转换为句子，列举标签时尤其有用。
+<p>
+{{ page.tags | array_to_sentence_string }}
+</p>
+</div>
+
+<div>
+include传参 及 调用
+<p>
+{% include footer.html param="value" variable-param=page.variable %}
+{{ include.param }}
+</p>
+</div>
+
+<div>
+代码高亮
+<p>
+{% highlight java [linenos] %}
+if(1==1){
+	return "linenos 是显示行号入参 可选";
+}
+{% endhighlight %}
+
+使用代码高亮 需要一个样式表
+https://github.com/mojombo/tpw/blob/master/css/syntax.css
+使用linenos 还需要加入.lineno样式
+</p>
+</div>
+
+<div>
+链接 博文链接
+<p>
+{% link _collection/name-of-document.md %}
+{% post_url /filename/2010-07-21-name-of-post %}
+</p>
+</div>
+
+<div>
+
+<p>
+<xmp>
+	<ul>
+	  {% for post in site.posts %}
+		<li>
+		  <a href="{{ post.url }}">{{ post.title }}</a>
+		  <p>{{ post.excerpt }}</p>
+		</li>
+	  {% endfor %}
+	</ul>
+</xmp>
+</p>
+</div>
