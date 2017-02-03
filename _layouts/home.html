@@ -30,13 +30,14 @@
 	<div id="homeMenuBtnDiv"> <a id="homeMenuBtn" class="btn">菜单</a> </div>
   </body>
   <script type="text/javascript">
+	const preURL = "https://wangjianjie606.github.io";
 	$("#homeMenuBtn").on("click",function(){
 		alert("aaa");
 		//主体往左移动140px，显示菜单div
 	});
 	
 	$(".homeExcerpt").on("click",function(){
-		var a = 1;
+		window.location.href = preURL + $(this).attr("url"); 
 	});
   </script>
 </html>
