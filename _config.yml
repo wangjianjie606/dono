@@ -4,3 +4,4 @@ author:                                     #自定义常亮
 baseurl: /dono
 safe: false
 excerpt_separator: "\n\n\n"
+pic_url: "https://raw.githubusercontent.com/wangjianjie606/dono/gh-pages/images"
