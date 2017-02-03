@@ -37,13 +37,13 @@
 		if(typeof left === "string"){
 			left.substr(2) == "px" ? dosomething(left.substring(0,left.length-2)):console.error("wrong string");
 		}else if(typeof left === "number"){
-			dosomething();
+			dosomething(left);
 		}
 	});
 	
 	const dosomething = left =>{
 		//主体往左移动140px，显示菜单div 宽度280px 显示为分类及其子项
-		
+		alert(left);
 	}
   </script>
 </html>
