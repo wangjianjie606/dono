@@ -51,19 +51,16 @@ body{
 }
 
 .homeContentTitle{
+	font-size:35px;
+	font-weight:bloder;
 	text-decoration:none;
-	color:#5353ce;
+	color:black;
 }
 
 .homeContentTitle:hover, .homeContentTitle:active{
 	text-decoration:underline;
-	color:#ec9494;
 }
 
 .homeContentTitle:visited{
-	color:#5d5d82;
-}
-
-.homeExcerpt{
-	cursor:pointer;
+	color:gray;
 }
