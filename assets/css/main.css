@@ -93,16 +93,3 @@ body{
 .closeSidebarContent{
   display:none;
 }
-
-#homeBodyDiv{
-	width:1000px;
-	margin-left:646px;
-	
-	float:left
-}
-
-#homeSideBarDiv{
-	width:200px;
-	height:100%;
-	float:left;
-}

@@ -1,0 +1,12 @@
+#homeBodyDiv{
+	width:1000px;
+	margin-left:175px;
+	
+	float:left
+}
+
+#homeSideBarDiv{
+	width:200px;
+	height:100%;
+	float:left;
+}
