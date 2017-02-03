@@ -55,7 +55,7 @@ body{
 	color:#5353ce;
 }
 
-.homeContentTitle:hover:active{
+.homeContentTitle:hover, .homeContentTitle:active{
 	text-decoration:underline;
 	color:#ec9494;
 }
