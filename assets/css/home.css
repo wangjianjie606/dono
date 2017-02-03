@@ -21,7 +21,7 @@ body{
 
 #homeMenuBtnDiv{
 	position:fixed;
-	left:1200px;
+	right:150px;
 	top:300px;
 	margin-top:50px;
 	text-align:center;
