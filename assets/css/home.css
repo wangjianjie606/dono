@@ -14,8 +14,8 @@ body{
 	width:0px;
 	height:200px;
 	background-color:rgba(13,200,111,0.2);
-	position:absolute;
-	left:1325px;
+	position:fixed;
+	right:0px;
 	margin-top:15px;
 }
 
