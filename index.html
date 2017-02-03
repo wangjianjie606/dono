@@ -5,9 +5,9 @@ title: My Blog
 
 {% for post in site.posts %}
   <div style="border-bottom-style:dashed; border-color:rgb(132, 132, 132); margin-top:20px;">
-    <div >
+    <div style="font-size:15px;">
 	  <a style="font-size:22px;" href="{{ site.baseurl }}{{ post.url }}?{{site.time}}">{{ post.title }}</a>
-	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	  {{ post.date | date_to_string }}
 	</div>
     <p>{{ post.excerpt }}</p>
