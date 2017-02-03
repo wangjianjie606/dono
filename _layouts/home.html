@@ -45,13 +45,13 @@
 		//主体往左移动140px，显示菜单div 宽度280px 显示为分类及其子项
 		const moveValue = 140;
 		if(left>moveValue){
-			$("#homeBodyDiv").css("margin-left",left-moveValue);
-			$("#homeSideBarDiv").css("width",moveValue*2);
-			$("#homeMenuBtnDiv").css("left","1000");
+			$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
+			$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
+			$("#homeMenuBtnDiv").animate({"left" : "1000px"});
 		}else{
-			$("#homeBodyDiv").css("margin-left",left+moveValue);
-			$("#homeSideBarDiv").css("width",0);
-			$("#homeMenuBtnDiv").css("left","1200");
+			$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
+			$("#homeSideBarDiv").animate({"width" : "0px"});
+			$("#homeMenuBtnDiv").animate({"left" : "1200px"});
 		}
 	}
   </script>
