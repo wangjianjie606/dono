@@ -6,11 +6,11 @@ title: My Blog
 {% for post in site.posts %}
   <div style="border-bottom-style:dashed; border-color:rgb(132, 132, 132); margin-top:20px;">
     <div style="font-size:15px;">
-	  <a style="font-size:22px;" class="homeContentTitle" href="{{ site.baseurl }}{{ post.url }}?{{site.time}}">{{ post.title }}</a>
+	  <a style="font-size:30px;" class="homeContentTitle" href="{{ site.baseurl }}{{ post.url }}?{{site.time}}">{{ post.title }}</a>
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	  {{ post.date | date_to_string }}
 	</div>
-    <div class="homeExcerpt" url="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</div>
+    <div >{{ post.excerpt }}</div>
   </div>
 {% endfor %}
 
