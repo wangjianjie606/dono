@@ -9,7 +9,6 @@
     <title>{{ page.title }}</title>
   
     <script src="{{ '/assets/js/jquery-3.1.1.min.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/assets/js/personal.js' | prepend: site.baseurl}}"></script>
   
     <link rel="stylesheet" href="{{ '/assets/css/home.css' | prepend: site.baseurl }}"></link>
   
@@ -31,6 +30,8 @@
 	<div id="homeMenuBtn"> 菜单 </div>
   </body>
   <script type="text/javascript">
-	
+	$("#homeMenuBtn").on("click",function(){
+		alert("aaa");
+	});
   </script>
 </html>

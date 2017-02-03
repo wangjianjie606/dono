@@ -31,6 +31,10 @@
 	background-color:rgba(0, 0, 0, 0.8);
 }
 
+#homeMenuBtn:visited{
+	background-color:rgba(83,30,99,0.5);
+}
+
 body{
   font-family: "Monaco", "SimSun", "宋体";
 }
