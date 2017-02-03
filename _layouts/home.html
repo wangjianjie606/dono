@@ -58,10 +58,10 @@
 	//菜单随滚动条滚动
 	$(window).scroll(()=>{
 		const scrollY = window.scrollY;
-		console.log(scrollY);
-		console.log($(this).scrollTop());
+		console.log("scrollY:"+scrollY);
+		console.log("scrollTop:"+$(this).scrollTop());
 		if(scrollY>350){
-			$("#homeMenuBtnDiv").animate({"top" : scrollY+"px"});
+			$("#homeMenuBtnDiv").css("top",scrollY+"px");
 		}
 	});
   </script>
