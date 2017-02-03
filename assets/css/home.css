@@ -16,11 +16,11 @@ body{
 	background-color:rgba(13,200,111,0.2);
 	position:absolute;
 	left:1325px;
-	top:305px;
+	margin-top:15px;
 }
 
 #homeMenuBtnDiv{
-	position:absolute;
+	position:fixed;
 	left:1200px;
 	margin-top:50px;
 	text-align:center;
