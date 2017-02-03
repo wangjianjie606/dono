@@ -10,7 +10,7 @@ title: My Blog
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	  {{ post.date | date_to_string }}
 	</div>
-    <p class="homeExcerpt" url="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</p>
+    <div class="homeExcerpt" url="{{ site.baseurl }}{{ post.url }}">{{ post.excerpt }}</div>
   </div>
 {% endfor %}
 
