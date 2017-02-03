@@ -47,12 +47,17 @@
 		if(left>moveValue){
 			$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
 			$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
-			$("#homeMenuBtnDiv").animate({"left" : "1000px"});
+			$("#homeMenuBtnDiv").animate({"left" : "1025px"});
 		}else{
 			$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
 			$("#homeSideBarDiv").animate({"width" : "0px"});
 			$("#homeMenuBtnDiv").animate({"left" : "1200px"});
 		}
 	}
+	
+	//菜单随滚动条滚动
+	$(window).scroll(()=>{
+		$(this).scrollTop();
+	});
   </script>
 </html>
