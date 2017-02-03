@@ -24,10 +24,11 @@
 	border-radius:6px;
 	color:white;
 	background-color:rgba(0, 0, 0, 0.2);
+	cursor:pointer;
 }
 
 #homeMenuBtn:hover{
-	background-color:rgba(0, 0, 0, 0.2);
+	background-color:rgba(0, 0, 0, 0.8);
 }
 
 body{
