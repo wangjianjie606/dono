@@ -62,7 +62,7 @@ body{
 
 .homeContentTitle:hover, .homeContentTitle:active{
 	color:gray;
-	text-decoration:underline;
+	/*text-decoration:underline;*/
 }
 
 .homeContentTitle:visited{
