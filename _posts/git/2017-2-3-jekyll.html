@@ -2,6 +2,7 @@
 layout: default
 title: jekyll备忘
 ---
+
 <div>
 统计字数
 <p>
@@ -19,7 +20,7 @@ title: jekyll备忘
 <div>
 include传参 及 调用
 <p>
-{% include footer.html param="value" variable-param=page.variable %}
+{/% include footer.html param="value" variable-param=page.variable %}
 {{ include.param }}
 </p>
 </div>
@@ -27,11 +28,11 @@ include传参 及 调用
 <div>
 代码高亮
 <p>
-{% highlight java [linenos] %}
+{/% highlight java [linenos] %}
 if(1==1){
 	return "linenos 是显示行号入参 可选";
 }
-{% endhighlight %}
+{/% endhighlight %}
 
 使用代码高亮 需要一个样式表
 https://github.com/mojombo/tpw/blob/master/css/syntax.css
@@ -42,8 +43,8 @@ https://github.com/mojombo/tpw/blob/master/css/syntax.css
 <div>
 链接 博文链接
 <p>
-{% link _collection/name-of-document.md %}
-{% post_url /filename/2010-07-21-name-of-post %}
+{/% link _collection/name-of-document.md %}
+{/% post_url /filename/2010-07-21-name-of-post %}
 </p>
 </div>
 
