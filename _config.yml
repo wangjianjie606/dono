@@ -2,4 +2,5 @@ author:                                     #自定义常亮
   name: 王健杰
   email: wangjianjie606@gmail.com
 baseurl: /dono
-excerpt_separator: "/n/n/n"
+safe: false
+excerpt_separator: "\n\n\n"
