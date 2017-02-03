@@ -5,7 +5,7 @@ title: My Blog
 
 <ul>
   {% for post in site.posts %}
-    <div style="border:solid,none;">
+    <div style="border-bottom-style:dashed; border-color:rgb(132, 132, 132);">
       <li style="">{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}?{{site.time}}">{{ post.title }}</a></li>
       <p>{{ post.excerpt }}</p>
 	</div>
