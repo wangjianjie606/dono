@@ -46,8 +46,10 @@
 		const moveValue = 140;
 		if(left>moveValue){
 			$("#homeBodyDiv").css("margin-left",left-moveValue);
+			$("#homeSideBarDiv").css("width",moveValue*2);
 		}else{
 			$("#homeBodyDiv").css("margin-left",left+moveValue);
+			$("#homeSideBarDiv").css("width",0);
 		}
 	}
   </script>

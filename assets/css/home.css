@@ -11,9 +11,9 @@ body{
 }
 
 #homeSideBarDiv{
-	width:200px;
-	height:100%;
-	float:left;
+	width:0px;
+	height:200px;
+	float:right;
 	background-color:rgba(13,200,111,0.2);
 }
 
