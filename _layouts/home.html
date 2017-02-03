@@ -35,10 +35,10 @@
 		//alert("aaa");
 		const left = $("#homeBodyDiv").css("margin-left");
 		if(typeof left === "string"){
-			left.substr(left.length-2) == "px" ? dosomething(left.substring(0,left.length-2)):console.error("wrong string");
+			left.substr(left.length-2) == "px" ? dosomething(parseInt(left.substring(0,left.length-2))):console.error("wrong string");
 		}else if(typeof left === "number"){
 			dosomething(left);
-		}
+		}else console.error("wrong type");
 	});
 	
 	const dosomething = left =>{
