@@ -100,3 +100,9 @@ body{
 	
 	float:left
 }
+
+#homeSideBarDiv{
+	width:100px;
+	height:100%;
+	float:left;
+}
