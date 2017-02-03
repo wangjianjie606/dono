@@ -14,6 +14,7 @@ body{
 	width:200px;
 	height:100%;
 	float:left;
+	background-color:rgba(13,200,111,0.2);
 }
 
 #homeMenuBtnDiv{
@@ -58,6 +59,7 @@ body{
 }
 
 .homeContentTitle:hover, .homeContentTitle:active{
+	color:gray;
 	text-decoration:underline;
 }
 
