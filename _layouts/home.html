@@ -87,10 +87,11 @@
 */
 
 	$(".category").on("click",function(){
-		if($(this).children("div").css("display")=="none")
-			$(this).children("div").css("display","block");
+		const o = $(this).parent().children("div");
+		if(o.css("display")=="none")
+			o.css("display","block");
 		else 
-			$(this).children("div").css("display","none");
+			o.css("display","none");
 	})
   </script>
 </html>
