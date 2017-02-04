@@ -24,7 +24,10 @@
 	</div>
 	<div id="homeSideBarDiv">
 	  <div id="homeSideBar" style="display:block;padding:30px 20px;white-space:nowrap;">
-		<div style="font-size:20px;">菜单</div>
+		<div style="font-size:20px;">
+			<div style="width: 30px; height: 5px;border-top: 5px solid #DD575C;border-bottom: 5px solid #DD575C;background-color: #DD575C;padding: 5px 0;background-clip:content-box; "></div>
+			菜单
+		</div>
 		{% for category in site.categories %}
 		<div style="padding:10px;">
 			<span class="category" category="{{ category | first }}" >
