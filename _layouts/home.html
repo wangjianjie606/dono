@@ -27,6 +27,7 @@
 		<div style="font-size:20px;">菜单</div>
 		{% for category in site.categories %}
 		<div style="padding:10px;">
+			<div><svg><polygon points="0,0  10,0  5,7"style="stroke:#660000; fill:#cc3333;" /></svg></div>
 			<span class="category" category="{{ category | first }}" >{{ category | first }}</span>&nbsp;(<span>{{ category | last | size }}</span>)
 			<div style="display:none;">
 				{% for post in category.last %}
