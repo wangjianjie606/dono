@@ -27,8 +27,11 @@
 		<div style="font-size:20px;">菜单</div>
 		{% for category in site.categories %}
 		<div style="padding:10px;">
-			<span><svg style="width:10px;height:10px;"><polygon points="0,0  10,0  5,7"style="fill:black;" /></svg></span>
-			<span class="category" category="{{ category | first }}" >{{ category | first }}</span>&nbsp;(<span>{{ category | last | size }}</span>)
+			<span class="category" category="{{ category | first }}" >
+			  <svg style="width:10px;height:10px;">
+			    <polygon points="0,0  10,0  5,7"style="fill:black;" />
+			  </svg>&nbsp;&nbsp;{{ category | first }}
+			</span>&nbsp;(<span>{{ category | last | size }}</span>)
 			<div style="display:none;">
 				{% for post in category.last %}
 				<div style="padding-left:10px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
@@ -93,6 +96,8 @@
 			o.css("display","block");
 		else 
 			o.css("display","none");
+		//0,3  10,3  5,10
+		//3,0  10,5  3,10
 	})
   </script>
 </html>
