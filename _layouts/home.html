@@ -32,9 +32,9 @@
 			    <polygon points="3,0  10,5  3,10"style="fill:black;" />
 			  </svg>&nbsp;{{ category | first }}
 			</span>(<span>{{ category | last | size }}</span>)
-			<div style="display:none;">
+			<div style="display:none;padding-top:5px;">
 				{% for post in category.last %}
-				<div style="padding-left:10px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
+				<div style="padding-left:20px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
 				{% endfor %}
 			</div>
 		</div>
