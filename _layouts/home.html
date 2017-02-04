@@ -30,8 +30,8 @@
 			<span class="category" category="{{ category | first }}" >
 			  <svg style="width:10px;height:10px;">
 			    <polygon points="3,0  10,5  3,10"style="fill:black;" />
-			  </svg>&nbsp;&nbsp;{{ category | first }}
-			</span>&nbsp;(<span>{{ category | last | size }}</span>)
+			  </svg>&nbsp;{{ category | first }}
+			</span>(<span>{{ category | last | size }}</span>)
 			<div style="display:none;">
 				{% for post in category.last %}
 				<div style="padding-left:10px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
@@ -50,13 +50,13 @@
 		//alert("aaa");
 		const left = $("#homeBodyDiv").css("margin-left");
 		if(typeof left === "string"){
-			left.substr(left.length-2) == "px" ? dosomething(parseInt(left.substring(0,left.length-2))):console.error("wrong string");
+			left.substr(left.length-2) == "px" ? moveDiv(parseInt(left.substring(0,left.length-2))):console.error("wrong string");
 		}else if(typeof left === "number"){
-			dosomething(left);
+			moveDiv(left);
 		}else console.error("wrong type");
 	});
 	
-	const dosomething = left =>{
+	const moveDiv = left =>{
 		//主体往左移动140px，显示菜单div 宽度280px 显示为分类及其子项
 		const moveValue = 140;
 		if(left>moveValue){
