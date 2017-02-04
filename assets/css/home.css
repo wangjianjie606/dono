@@ -65,6 +65,8 @@ body{
 #homeMenuBtn:before{
 	content: "\f609";
 	font-family: "casper-icons", "Open Sans", sans-serif;
+	position:relative;
+	left:-3px;
 }
 
 .btn{
