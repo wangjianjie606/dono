@@ -29,7 +29,7 @@
 		<div style="padding:10px;">
 			<span class="category" category="{{ category | first }}" >
 			  <svg style="width:10px;height:10px;">
-			    <polygon points="0,0  10,0  5,7"style="fill:black;" />
+			    <polygon points="3,0  10,5  3,10"style="fill:black;" />
 			  </svg>&nbsp;&nbsp;{{ category | first }}
 			</span>&nbsp;(<span>{{ category | last | size }}</span>)
 			<div style="display:none;">
@@ -91,13 +91,15 @@
 */
 
 	$(".category").on("click",function(){
+		const right="3,0  10,5  3,10",down="0,3  10,3  5,10";
 		const o = $(this).parent().children("div");
-		if(o.css("display")=="none")
+		if(o.css("display")=="none"){
 			o.css("display","block");
-		else 
+			$(this).children().children().attr("points",down);
+		}else{ 
 			o.css("display","none");
-		//0,3  10,3  5,10
-		//3,0  10,5  3,10
+			$(this).children().children().attr("points",right);
+		}
 	})
   </script>
 </html>
