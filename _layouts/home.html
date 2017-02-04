@@ -23,7 +23,13 @@
       </div>
 	</div>
 	<div id="homeSideBarDiv">
-	  <div id="homeSideBar" style="display:none;">
+	  <div id="homeSideBar" style="display:block;">
+		<div>菜单</div>
+		{% for category in site.categories %}
+		<div>
+		<span>{{ category | first }}</span>&nbsp;&nbsp;<span>{{ category | last | size }}</span>
+		</div>
+		{% endfor %}
 		
       </div>
 	</div>
@@ -66,7 +72,7 @@
 			$("#homeSideBarDiv").css("top",308-scrollY+"px");
 		}else if($("#homeMenuBtnDiv").css("left")!="300px"){
 			$("#homeMenuBtnDiv").css("top","0px");
-			$("#homeSideBarDiv").css("top","8px");
+			$("#homeSideBarDiv").css("top","0px");
 		}
 	});
 
