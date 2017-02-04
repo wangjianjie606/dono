@@ -77,9 +77,12 @@ body{
 }
 
 .link{
+	font-weight:bloder;
+	text-decoration:none;
+	color:black;
 	text-decoration:none;
 }
 
-.homeContentTitle:hover, .homeContentTitle:active{
+.link:hover, .link:active{
 	color:gray;
 }
