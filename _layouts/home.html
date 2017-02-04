@@ -23,11 +23,11 @@
       </div>
 	</div>
 	<div id="homeSideBarDiv">
-	  <div id="homeSideBar" style="display:block;">
-		<div>菜单</div>
+	  <div id="homeSideBar" style="display:block;padding:30px 20px;">
+		<div style="font-size:20px;">菜单</div>
 		{% for category in site.categories %}
-		<div>
-		<span>{{ category | first }}</span>&nbsp;&nbsp;<span>{{ category | last | size }}</span>
+		<div style="padding:30px;">
+			<span>{{ category | first }}</span>&nbsp;················&nbsp;<span>{{ category | last | size }}</span>
 		</div>
 		{% endfor %}
 		
