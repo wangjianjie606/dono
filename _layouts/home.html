@@ -28,6 +28,11 @@
 		{% for category in site.categories %}
 		<div style="padding:30px;">
 			<span>{{ category | first }}</span>&nbsp;················&nbsp;<span>{{ category | last | size }}</span>
+			<div style="display:none;">
+				{% for post in category.last %}
+				<div><a href="#">{{ post.title }}</a></div>
+				{% endfor %}
+			</div>
 		</div>
 		{% endfor %}
 		
