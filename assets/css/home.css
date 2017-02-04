@@ -14,7 +14,7 @@ body{
 	white-space:nowrap;
 	z-index:100;
 	width:0px;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,1);
 	position:fixed;
 	right:8px;
 	bottom:0px;
@@ -74,4 +74,8 @@ body{
 
 .category{
 	cursor:pointer;
+}
+
+.link{
+	text-decoration:none;
 }

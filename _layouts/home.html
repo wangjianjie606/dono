@@ -30,7 +30,7 @@
 			<span>{{ category | first }}</span>&nbsp;(<span>{{ category | last | size }}</span>)
 			<div style="display:none;">
 				{% for post in category.last %}
-				<div style="padding-left:10px">-<a href="{{ site.baseurl }}{{ post.url }}" class="homeContentTitle">{{ post.title }}</a></div>
+				<div style="padding-left:10px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
 				{% endfor %}
 			</div>
 		</div>
