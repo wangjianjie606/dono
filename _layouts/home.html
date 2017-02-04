@@ -47,11 +47,11 @@
 		if(left>moveValue){
 			$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
 			$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"},"normal",()=>{});
-			$("#homeMenuBtnDiv").animate({"right" : "+="+moveValue*2+"px"});
+//			$("#homeMenuBtnDiv").animate({"right" : "+="+moveValue*2+"px"});
 		}else{
 			$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
 			$("#homeSideBarDiv").animate({"width" : "0px"},"normal",()=>{});
-			$("#homeMenuBtnDiv").animate({"right" : "-="+moveValue*2+"px"});
+//			$("#homeMenuBtnDiv").animate({"right" : "-="+moveValue*2+"px"});
 		}
 	}
 	
