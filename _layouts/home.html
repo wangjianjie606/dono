@@ -23,7 +23,7 @@
       </div>
 	</div>
 	<div id="homeSideBarDiv">
-	  <div id="homeSideBar">
+	  <div id="homeSideBar" style="display:none;">
 		
       </div>
 	</div>
@@ -46,12 +46,15 @@
 		const moveValue = 140;
 		if(left>moveValue){
 			$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
-			$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"},"normal",()=>{});
-//			$("#homeMenuBtnDiv").animate({"right" : "+="+moveValue*2+"px"});
+			$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"},"normal",
+				()=>{
+					//$("#homeSideBar").css("display","block");
+				});
+			$("#homeMenuBtnDiv").animate({"right" : "+="+(moveValue+10)+"px"});
 		}else{
 			$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
 			$("#homeSideBarDiv").animate({"width" : "0px"},"normal",()=>{});
-//			$("#homeMenuBtnDiv").animate({"right" : "-="+moveValue*2+"px"});
+			$("#homeMenuBtnDiv").animate({"right" : "-="+(moveValue+10)+"px"});
 		}
 	}
 	
