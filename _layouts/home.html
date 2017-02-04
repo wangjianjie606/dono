@@ -26,8 +26,8 @@
 	  <div id="homeSideBar" style="display:block;padding:30px 20px;white-space:nowrap;">
 		<div style="font-size:20px;">菜单</div>
 		{% for category in site.categories %}
-		<div class="category" category="{{ category | first }}" style="padding:10px;">
-			<span>{{ category | first }}</span>&nbsp;(<span>{{ category | last | size }}</span>)
+		<div style="padding:10px;">
+			<span class="category" category="{{ category | first }}" >{{ category | first }}</span>&nbsp;(<span>{{ category | last | size }}</span>)
 			<div style="display:none;">
 				{% for post in category.last %}
 				<div style="padding-left:10px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
@@ -87,7 +87,10 @@
 */
 
 	$(".category").on("click",function(){
-		$(this).children("div").css("display","block");
+		if($(this).children("div").css("display")=="none")
+			$(this).children("div").css("display","block");
+		else 
+			$(this).children("div").css("display","none");
 	})
   </script>
 </html>
