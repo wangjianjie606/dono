@@ -8,7 +8,7 @@ title: DONO
     <div style="font-size:15px;padding-bottom:15px;">
 	  <a class="homeContentTitle" href="{{ site.baseurl }}{{ post.url }}?{{site.time}}">{{ post.title }}</a>
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	  {{ post.date | date:"%d/%m/%Y" }}
+	  {{ post.date | date_to_string }}
 	</div>
     <div style="cursor:default;">{{ post.excerpt }}</div>
   </div>
