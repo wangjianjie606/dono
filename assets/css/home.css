@@ -12,12 +12,10 @@ body{
 
 #homeSideBarDiv{
 	width:0px;
-	height:200px;
-	background-color:rgba(13,200,111,0.2);
+	background-color:rgba(0,0,0,0.5);
 	position:fixed;
 	right:8px;
-	margin-top:15px;
-	bottom:8px;
+	bottom:0px;
 }
 
 #homeMenuBtnDiv{
