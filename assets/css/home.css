@@ -70,3 +70,7 @@ body{
 .homeContentTitle:visited{
 	color:gray;
 }
+
+.category{
+	cursor:pointer;
+}
