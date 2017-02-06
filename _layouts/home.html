@@ -85,7 +85,7 @@
 			if(scrollY<300){
 				$("#homeMenuBtnDiv").css("top",300-scrollY+"px");
 				$("#homeSideBarDiv").css("top",308-scrollY+"px");
-				$("#homeTopBtnDiv").animate({"bottom":"-48px","solw"},()=>{$("#homeTopBtnDiv").css("display","none");});
+				$("#homeTopBtnDiv").animate({"bottom":"-48px"},"solw",()=>{$("#homeTopBtnDiv").css("display","none");});
 			}else if($("#homeMenuBtnDiv").css("left")!="300px"){
 				$("#homeMenuBtnDiv").css("top","0px");
 				$("#homeSideBarDiv").css("top","0px");
