@@ -12,7 +12,11 @@
 }
 
 body{
-  font-family: "Monaco", "SimSun", "宋体";
+	font-family: "Monaco", "SimSun", "宋体";
+}
+
+a{
+	text-decoration:none;
 }
 
 #homeBodyDiv{
