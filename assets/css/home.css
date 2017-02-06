@@ -30,7 +30,8 @@ a{
 	white-space:nowrap;
 	z-index:100;
 	width:0px;
-	background-color:rgba(200,200,200,1);
+	background-color:rgba(35,35,35,1);
+	color:white;
 	position:fixed;
 	right:8px;
 	bottom:0px;
@@ -54,12 +55,12 @@ a{
 	height:30px;
 	border-radius:6px;
 	color:white;
-	background-color:rgba(0, 0, 0, 0.2);
+	background-color:rgba(204, 204, 204, 1);
 	cursor:pointer;
 }
 
 #homeMenuBtn:hover{
-	background-color:rgba(0, 0, 0, 0.8);
+	background-color:rgba(35, 35, 35, 1);
 }
 
 #homeMenuBtn:active{

@@ -29,14 +29,14 @@
 		</div>
 		{% for category in site.categories %}
 		<div style="padding:10px;">
-			<span class="category" category="{{ category | first }}" >
+			<span class="category" category="{{ category | first }}" style="color:white;">
 			  <svg style="width:10px;height:10px;">
 			    <polygon points="3,0  10,5  3,10"style="fill:black;" />
 			  </svg>&nbsp;{{ category | first }}
-			</span>(<span>{{ category | last | size }}</span>)
+			</span>(<span style="color:white;">{{ category | last | size }}</span>)
 			<div style="display:none;padding-top:5px;">
 				{% for post in category.last %}
-				<div style="padding-left:20px">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
+				<div style="padding-left:20px;color:white;">-<a href="{{ site.baseurl }}{{ post.url }}" style="color:white;" class="link">{{ post.title }}</a></div>
 				{% endfor %}
 			</div>
 		</div>
