@@ -55,6 +55,8 @@
   <script type="text/javascript">
 	$(document).ready(function(){ 
 		const preURL = "https://wangjianjie606.github.io";
+		init();
+		
 		$("#homeMenuBtn").on("click",()=>{
 			//alert("aaa");
 			const left = $("#homeBodyDiv").css("margin-left");
@@ -85,12 +87,15 @@
 			if(scrollY<300){
 				$("#homeMenuBtnDiv").css("top",300-scrollY+"px");
 				$("#homeSideBarDiv").css("top",308-scrollY+"px");
-				$("#homeTopBtnDiv").animate({"bottom":"-48px"},{queue:false});
 			}else if($("#homeMenuBtnDiv").css("left")!="300px"){
 				$("#homeMenuBtnDiv").css("top","0px");
 				$("#homeSideBarDiv").css("top","0px");
-				$("#homeTopBtnDiv").animate({"bottom":"35px"},{queue:false});
 			}
+			
+			if(scrollY<900)
+				$("#homeTopBtnDiv").animate({"bottom":"-48px"},{queue:false});
+			else	
+				$("#homeTopBtnDiv").animate({"bottom":"35px"},{queue:false});
 		});
 	/*
 		$(".category").on("click", cat => {
@@ -113,6 +118,22 @@
 		$("#homeTopBtn").click(()=>{
 			$("html, body, .content").animate({scrollTop:0}); 
 		});
+		
+		const init = ()=>{
+			if(window.scrollY > 300){
+				$("#homeMenuBtnDiv").css("top","0px");
+				$("#homeSideBarDiv").css("top","0px");
+			}else{
+				$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
+				$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
+			}
+			
+			if(window.scrollY > 900){
+				$("#homeTopBtnDiv").css("bottom","35px");
+			}else{
+				$("#homeTopBtnDiv").css("bottom","-48px");
+			}
+		}
 	});
   </script>
 </html>
