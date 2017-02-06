@@ -48,7 +48,7 @@
 		<!-- <div style="width: 30px; height: 4px;border-top: 4px solid #DD575C;border-bottom: 4px solid #DD575C;background-color: #DD575C;padding: 4px 0;background-clip:content-box; "></div>-->
 		<a id="homeMenuBtn" class="btn"><span style="font-size:15px;position:relative;left:4px;top:-2px;">菜单</span></a> 
 	</div>
-	<div id="homeTopBtnDiv" style="width:40px;height:40px;right:100px;bottom:35px;position:fixed;">
+	<div id="homeTopBtnDiv" style="width:40px;height:40px;right:100px;bottom:-48px;position:fixed;">
 		<a id="homeTopBtn" title="回到页头" class="btn" style="cursor: pointer;"><span>▲</span></a>
 	</div>
   </body>
@@ -85,11 +85,12 @@
 			if(scrollY<300){
 				$("#homeMenuBtnDiv").css("top",300-scrollY+"px");
 				$("#homeSideBarDiv").css("top",308-scrollY+"px");
-				$("#homeTopBtnDiv").css("display","none");
+				$("#homeTopBtnDiv").animate({"bottom":"-48px","solw",()=>{$("#homeTopBtnDiv").css("display","none")}});
 			}else if($("#homeMenuBtnDiv").css("left")!="300px"){
 				$("#homeMenuBtnDiv").css("top","0px");
 				$("#homeSideBarDiv").css("top","0px");
 				$("#homeTopBtnDiv").css("display","block");
+				$("#homeTopBtnDiv").animate({"bottom":"35px"});
 			}
 		});
 	/*
