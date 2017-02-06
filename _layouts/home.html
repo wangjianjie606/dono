@@ -55,7 +55,7 @@
   <script type="text/javascript">
 	$(document).ready(function(){ 
 		const preURL = "https://wangjianjie606.github.io";
-		init();
+		initPage();
 		
 		$("#homeMenuBtn").on("click",()=>{
 			//alert("aaa");
@@ -119,7 +119,7 @@
 			$("html, body, .content").animate({scrollTop:0}); 
 		});
 		
-		const init = ()=>{
+		const initPage = ()=>{
 			if(window.scrollY > 300){
 				$("#homeMenuBtnDiv").css("top","0px");
 				$("#homeSideBarDiv").css("top","0px");
