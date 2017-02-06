@@ -106,3 +106,17 @@ body{
 	color:gray;
 }
 
+#homeTopBtn{
+	background-color: rgba(234,234,234,1);
+	border-radius: 20px; 
+	bottom: 20px; 
+	color: #ffffff; 
+	font-size: 22px; 
+	padding-bottom: 9px;
+	text-align: center;
+	z-index: 3;
+}
+
+#homeTopBtn:hover{
+	background-color: rgba(181,181,181,1);
+}
