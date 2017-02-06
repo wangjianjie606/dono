@@ -60,7 +60,7 @@ a{
 }
 
 #homeMenuBtn:hover{
-	background-color:rgba(35, 35, 35, 1);
+	background-color:grey;
 }
 
 #homeMenuBtn:active{
