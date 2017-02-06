@@ -70,12 +70,12 @@
 			//主体往左移动100px，显示菜单div 宽度280px 显示为分类及其子项
 			const moveValue = 100;
 			if(left>moveValue){
-				$("#homeMenuBtnDiv").css("background-color","rgb(35,35,35)");
+				$("#homeMenuBtn").css("background-color","rgb(35,35,35)");
 				$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
 				$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
 				$("#homeMenuBtnDiv").animate({"right" : "+="+(moveValue+20)+"px"});
 			}else{
-				$("#homeMenuBtnDiv").css("background-color","rgb(204,204,204)");
+				$("#homeMenuBtn").css("background-color","rgb(204,204,204)");
 				$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
 				$("#homeSideBarDiv").animate({"width" : "0px"},"normal",()=>{});
 				$("#homeMenuBtnDiv").animate({"right" : "-="+(moveValue+20)+"px"});
