@@ -68,7 +68,7 @@
 		
 		const moveDiv = left =>{
 			//主体往左移动140px，显示菜单div 宽度280px 显示为分类及其子项
-			const moveValue = 140;
+			const moveValue = 100;
 			if(left>moveValue){
 				$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
 				$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
