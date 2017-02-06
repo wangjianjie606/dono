@@ -28,7 +28,7 @@
 			菜单
 		</div>
 		{% for category in site.categories %}
-		<div style="padding:10px;">
+		<div style="padding:5px;">
 			<span class="category" category="{{ category | first }}" style="color:white;">
 			  <svg style="width:10px;height:10px;">
 			    <polygon points="3,0  10,5  3,10"style="fill:white;" />
@@ -36,7 +36,7 @@
 			</span>(<span style="color:white;">{{ category | last | size }}</span>)
 			<div style="display:none;padding-top:5px;">
 				{% for post in category.last %}
-				<div style="padding-left:20px;color:white;">-<a href="{{ site.baseurl }}{{ post.url }}" style="color:white;" class="link">{{ post.title }}</a></div>
+				<div style="padding-left:10px;color:white;">-<a href="{{ site.baseurl }}{{ post.url }}" style="color:white;" class="link">{{ post.title }}</a></div>
 				{% endfor %}
 			</div>
 		</div>
@@ -67,8 +67,8 @@
 		});
 		
 		const moveDiv = left =>{
-			//主体往左移动100px，显示菜单div 宽度280px 显示为分类及其子项
-			const moveValue = 100;
+			//主体往左移动120px，显示菜单div 宽度280px 显示为分类及其子项
+			const moveValue = 120;
 			if(left>moveValue){
 				$("#homeMenuBtn").css("background-color","rgb(35,35,35)");
 				$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
