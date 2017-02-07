@@ -120,7 +120,7 @@
 			$("html, body, .content").animate({scrollTop:0}); 
 		});
 		
-		(()=>{
+		+()=>{
 			if(window.scrollY > 300){
 				$("#homeMenuBtnDiv").css("top","0px");
 				$("#homeSideBarDiv").css("top","0px");
@@ -134,8 +134,8 @@
 			}else{
 				$("#homeTopBtnDiv").css("bottom","-48px");
 			}
-		})()
-	//	initPage();
+		}();
+
 	});
   </script>
 </html>
