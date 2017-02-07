@@ -46,7 +46,7 @@
 	</div>
 	<div id="homeMenuBtnDiv">
 		<!-- <div style="width: 30px; height: 4px;border-top: 4px solid #DD575C;border-bottom: 4px solid #DD575C;background-color: #DD575C;padding: 4px 0;background-clip:content-box; "></div>-->
-		<a id="homeMenuBtn" class="btn"><span style="font-size:15px;position:relative;left:4px;top:-2px;">菜单</span></a> 
+		<a id="homeMenuBtn" class="btn homeMenuBtnClose"><span style="font-size:15px;position:relative;left:4px;top:-2px;">菜单</span></a> 
 	</div>
 	<div id="homeTopBtnDiv" style="width:40px;height:40px;right:100px;bottom:-48px;position:fixed;">
 		<a id="homeTopBtn" title="回到页头" class="btn" style="cursor: pointer;"><span>▲</span></a>
@@ -70,12 +70,12 @@
 			//主体往左移动120px，显示菜单div 宽度280px 显示为分类及其子项
 			const moveValue = 120;
 			if(left>moveValue){
-				$("#homeMenuBtn").css("background-color","rgb(35,35,35)");
+				$("#homeMenuBtn").attr("class","btn homeMenuBtnOpen");
 				$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
 				$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
 				$("#homeMenuBtnDiv").animate({"right" : "+="+(moveValue)+"px"});
 			}else{
-				$("#homeMenuBtn").css("background-color","rgb(204,204,204)");
+				$("#homeMenuBtn").attr("class","btn homeMenuBtnClose");
 				$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
 				$("#homeSideBarDiv").animate({"width" : "0px"},"normal",()=>{});
 				$("#homeMenuBtnDiv").animate({"right" : "-="+(moveValue)+"px"});

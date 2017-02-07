@@ -55,7 +55,6 @@ a{
 	height:30px;
 	border-radius:6px;
 	color:white;
-	background-color:rgba(204, 204, 204, 1);
 	cursor:pointer;
 }
 
@@ -65,6 +64,14 @@ a{
 
 #homeMenuBtn:active{
 	background-color:rgba(2,0,70,0.5);
+}
+
+.homeMenuBtnClose{
+	background-color:rgba(204, 204, 204, 1);
+}
+
+.homeMenuBtnOpen{
+	background-color:rgba(35, 35, 35, 1);
 }
 
 #homeMenuBtn:before{
