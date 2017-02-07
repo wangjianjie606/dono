@@ -56,6 +56,22 @@
 	$(document).ready(function(){ 
 		const preURL = "https://wangjianjie606.github.io";
 		
+		(()=>{
+			if(window.scrollY > 300){
+				$("#homeMenuBtnDiv").css("top","0px");
+				$("#homeSideBarDiv").css("top","0px");
+			}else{
+				$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
+				$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
+			}
+			
+			if(window.scrollY > 900){
+				$("#homeTopBtnDiv").css("bottom","35px");
+			}else{
+				$("#homeTopBtnDiv").css("bottom","-48px");
+			}
+		})();
+		
 		$("#homeMenuBtn").on("click",()=>{
 			//alert("aaa");
 			const left = $("#homeBodyDiv").css("margin-left");
@@ -120,21 +136,7 @@
 			$("html, body, .content").animate({scrollTop:0}); 
 		});
 		
-		()=>{
-			if(window.scrollY > 300){
-				$("#homeMenuBtnDiv").css("top","0px");
-				$("#homeSideBarDiv").css("top","0px");
-			}else{
-				$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
-				$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
-			}
-			
-			if(window.scrollY > 900){
-				$("#homeTopBtnDiv").css("bottom","35px");
-			}else{
-				$("#homeTopBtnDiv").css("bottom","-48px");
-			}
-		}();
+		
 
 	});
   </script>
