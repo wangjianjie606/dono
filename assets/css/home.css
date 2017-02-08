@@ -36,6 +36,7 @@ a{
 	right:8px;
 	bottom:0px;
 	top:308px;
+	overflow-y:auto;
 }
 
 #homeMenuBtnDiv{
