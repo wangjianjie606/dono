@@ -19,7 +19,14 @@
     <div id="homeBodyDiv">
   
       <div >
-	    <div id="homeContent">{{ content }}</div>
+	    <div id="homeContent">
+		  {% if page.page == "homePage" %}
+		    {{ content }}
+		  {% else %}
+			<div>aaaaaaaaaaaaaaaa</div>
+		    {{content}}
+		  {% endif %}
+		</div>
       </div>
 	</div>
 	<div id="homeSideBarDiv">
