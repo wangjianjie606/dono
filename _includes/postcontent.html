@@ -6,7 +6,7 @@
 
 <div id="postInfo" style="">
 	<span id="postTag" >
-		标签: {{ page.categories }}
+		标签: {% for c in page.categories %} {{c" "}} {% endfor %}
 	</span>
 </div>
 
