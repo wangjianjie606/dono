@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
 		
-	(()=>{
+	()=>{
 		(()=>{
 			if(window.scrollY > 300){
 				$("#homeMenuBtnDiv").css("top","0px");
@@ -87,6 +87,6 @@ $(document).ready(function(){
 
 		ga('create', 'UA-91619330-1', 'auto');
 		ga('send', 'pageview');
-	}());
+	}();
 
 });
