@@ -23,7 +23,7 @@
 		<div style="font-size:20px;">
 			菜单
 		</div>
-		<div style="padding-left:22px;padding-top:20px;"><a href="{{ site.baseurl }}" style="color:white;" class="link">首页</a></div>
+		<div style="padding-left:22px;padding-top:20px;"><a href="{{ site.baseurl }}" class="link">首页</a></div>
 		{% for category in site.categories %}
 		<div style="padding:5px;">
 			<span class="category" category="{{ category | first }}" style="color:white;">
@@ -33,7 +33,7 @@
 			</span>(<span style="color:white;">{{ category | last | size }}</span>)
 			<div style="display:none;padding-top:5px;">
 				{% for post in category.last %}
-				<div style="padding-left:10px;color:white;">-<a href="{{ site.baseurl }}{{ post.url }}" style="color:white;" class="link">{{ post.title }}</a></div>
+				<div style="padding-left:10px;color:white;">-<a href="{{ site.baseurl }}{{ post.url }}" class="link">{{ post.title }}</a></div>
 				{% endfor %}
 			</div>
 		</div>
