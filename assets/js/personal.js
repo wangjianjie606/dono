@@ -1,4 +1,4 @@
-function blogInit(){
+(()=>{
 	(()=>{
 		if(window.scrollY > 300){
 			$("#homeMenuBtnDiv").css("top","0px");
@@ -85,4 +85,4 @@ function blogInit(){
 
 	ga('create', 'UA-91619330-1', 'auto');
 	ga('send', 'pageview');
-}
+})();
