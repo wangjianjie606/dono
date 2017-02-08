@@ -1,20 +1,76 @@
 function blogInit(){
-	$("#backBtn").on("click",function(){
-		history.go(-1);
+	(()=>{
+		if(window.scrollY > 300){
+			$("#homeMenuBtnDiv").css("top","0px");
+			$("#homeSideBarDiv").css("top","0px");
+		}else{
+			$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
+			$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
+		}
+		
+		if(window.scrollY > 900){
+			$("#homeTopBtnDiv").css("bottom","35px");
+		}else{
+			$("#homeTopBtnDiv").css("bottom","-48px");
+		}
+	})();
+	
+	$("#homeMenuBtn").on("click",()=>{
+		//alert("aaa");
+		const left = $("#homeBodyDiv").css("margin-left");
+		if(typeof left === "string"){
+			left.substr(left.length-2) == "px" ? moveDiv(parseInt(left.substring(0,left.length-2))):console.error("wrong string");
+		}else if(typeof left === "number"){
+			moveDiv(left);
+		}else console.error("wrong type");
 	});
 	
-	$('#menuBtn').on("click",function(){
-		const width = $(this).parent().width();
-		if(width>40){
-			$("#menuBtn").attr("class","closeMenuBtn");
-			$("#leftDiv").attr("class","closeMenu");
-			$("#sidebarContent").attr("class","closeSidebarContent");
-			$("#mainDiv").attr("class","bigMainDiv");
+	const moveDiv = left =>{
+		//主体往左移动120px，显示菜单div 宽度280px 显示为分类及其子项
+		const moveValue = 120;
+		if(left>moveValue){
+			$("#homeMenuBtn").attr("class","btn homeMenuBtnOpen");
+			$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
+			$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
+			$("#homeMenuBtnDiv").animate({"right" : "+="+(moveValue)+"px"});
 		}else{
-			$("#menuBtn").attr("class","openMenuBtn");
-			$("#leftDiv").attr("class","openMenu");
-			$("#sidebarContent").attr("class","openSidebarContent");
-			$("#mainDiv").attr("class","smallMainDiv");
+			$("#homeMenuBtn").attr("class","btn homeMenuBtnClose");
+			$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
+			$("#homeSideBarDiv").animate({"width" : "0px"},"normal",()=>{});
+			$("#homeMenuBtnDiv").animate({"right" : "-="+(moveValue)+"px"});
 		}
+	}
+	
+	//菜单随滚动条滚动
+	$(window).scroll(()=>{
+		const scrollY = window.scrollY;
+		if(scrollY<300){
+			$("#homeMenuBtnDiv").css("top",300-scrollY+"px");
+			$("#homeSideBarDiv").css("top",308-scrollY+"px");
+		}else if($("#homeMenuBtnDiv").css("left")!="300px"){
+			$("#homeMenuBtnDiv").css("top","0px");
+			$("#homeSideBarDiv").css("top","0px");
+		}
+		
+		if(scrollY<900)
+			$("#homeTopBtnDiv").animate({"bottom":"-48px"},{queue:false});
+		else	
+			$("#homeTopBtnDiv").animate({"bottom":"35px"},{queue:false});
+	});
+
+	$(".category").on("click",function(){
+		const right="3,0  10,5  3,10",down="0,3  10,3  5,10";
+		const o = $(this).parent().children("div");
+		if(o.css("display")=="none"){
+			o.css("display","block");
+			$(this).children().children().attr("points",down);
+		}else{ 
+			o.css("display","none");
+			$(this).children().children().attr("points",right);
+		}
+	});
+	
+	$("#homeTopBtn").click(()=>{
+		$("html, body, .content").animate({scrollTop:0}); 
 	});
 }
