@@ -133,3 +133,7 @@ a{
 #homeTopBtn:hover{
 	background-color: rgba(181,181,181,1);
 }
+
+::-webkit-scrollbar-track-piece{background-color:#fff;}
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-thumb{background:#999;}
