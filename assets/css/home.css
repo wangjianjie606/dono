@@ -134,6 +134,8 @@ a{
 	background-color: rgba(181,181,181,1);
 }
 
-body ::-webkit-scrollbar-track-piece{background-color:#000;}
+body ::-webkit-scrollbar-track-piece{background-color:rgb(35,35,35);}
 body ::-webkit-scrollbar{width:10px;}
 body ::-webkit-scrollbar-thumb{background:#999;}
+body ::-webkit-scrollbar-thumb:hover{background:#bbb;}
+body ::-webkit-scrollbar:hover{cursor:pointer;}
