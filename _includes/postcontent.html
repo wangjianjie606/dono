@@ -6,7 +6,8 @@
 
 <div id="postInfo" style="">
 	<span id="postTag" >
-		标签: {% for c in page.categories %} {{c" "}} {% endfor %}
+		标签 {{ page.categories | array_to_sentence_string }}
+<--		标签: {% for c in page.categories %} {{c" "}} {% endfor %} -->
 	</span>
 </div>
 
