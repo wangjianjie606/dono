@@ -1,5 +1,7 @@
 $(document).ready(function(){ 
 		
+	
+		
 	(()=>{
 		(()=>{
 			if(window.scrollY > 300){
@@ -87,6 +89,13 @@ $(document).ready(function(){
 
 		ga('create', 'UA-91619330-1', 'auto');
 		ga('send', 'pageview');
+		
+		try{
+		　　top.location.hostname;
+			top.location.hostname != window.location.hostname?top.location.href =window.location.href:;
+		}catch(e){
+		　　top.location.href = window.location.href;
+		}
 	})();
 
 });
