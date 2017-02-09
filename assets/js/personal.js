@@ -92,7 +92,7 @@ $(document).ready(function(){
 		
 		try{
 		　　top.location.hostname;
-			top.location.hostname != window.location.hostname?top.location.href =window.location.href:;
+			top.location.hostname != window.location.hostname?top.location.href =window.location.href:"";
 		}catch(e){
 		　　top.location.href = window.location.href;
 		}
