@@ -5,23 +5,28 @@ $(document).ready(function(){
 	(()=>{
 		(()=>{
 			if(window.scrollY > 300){
-				$("#homeMenuBtnDiv").css("top","0px");
-				$("#homeSideBarDiv").css("top","0px");
+				homeMenuBtnDiv.style.top = "0px";
+				homeSideBarDiv.style.top = "0px";
+//				$("#homeMenuBtnDiv").css("top","0px");
+//				$("#homeSideBarDiv").css("top","0px");
 			}else{
-				$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
-				$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
+				homeMenuBtnDiv.style.top = 300-window.scrollY+"px";
+				homeSideBarDiv.style.top = 308-window.scrollY+"px";
+//				$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
+//				$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
 			}
 			
 			if(window.scrollY > 900){
-				$("#homeTopBtnDiv").css("bottom","35px");
+				homeTopBtnDiv.style.bottom = "35px";
+//				$("#homeTopBtnDiv").css("bottom","35px");
 			}else{
-				$("#homeTopBtnDiv").css("bottom","-48px");
+				homeTopBtnDiv.style.bottom = "-48px";
+//				$("#homeTopBtnDiv").css("bottom","-48px");
 			}
 		})();
 		
-		$("#homeMenuBtn").on("click",()=>{
-			//alert("aaa");
-			const left = $("#homeBodyDiv").css("margin-left");
+		homeMenuBtn.onclick=()=>{
+			const left = homeBodyDiv.style.marginLeft;
 			if(typeof left === "string"){
 				left.substr(left.length-2) == "px" ? moveDiv(parseInt(left.substring(0,left.length-2))):console.error("wrong string");
 			}else if(typeof left === "number"){
