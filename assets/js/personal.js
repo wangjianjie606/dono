@@ -7,21 +7,15 @@ $(document).ready(function(){
 			if(window.scrollY > 300){
 				homeMenuBtnDiv.style.top = "0px";
 				homeSideBarDiv.style.top = "0px";
-//				$("#homeMenuBtnDiv").css("top","0px");
-//				$("#homeSideBarDiv").css("top","0px");
 			}else{
 				homeMenuBtnDiv.style.top = 300-window.scrollY+"px";
 				homeSideBarDiv.style.top = 308-window.scrollY+"px";
-//				$("#homeMenuBtnDiv").css("top",300-window.scrollY+"px");
-//				$("#homeSideBarDiv").css("top",308-window.scrollY+"px");
 			}
 			
 			if(window.scrollY > 900){
 				homeTopBtnDiv.style.bottom = "35px";
-//				$("#homeTopBtnDiv").css("bottom","35px");
 			}else{
 				homeTopBtnDiv.style.bottom = "-48px";
-//				$("#homeTopBtnDiv").css("bottom","-48px");
 			}
 		})();
 		
