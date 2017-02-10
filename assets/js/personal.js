@@ -32,7 +32,7 @@ $(document).ready(function(){
 			}else if(typeof left === "number"){
 				moveDiv(left);
 			}else console.error("wrong type");
-		});
+		};
 		
 		const moveDiv = left =>{
 			//主体往左移动120px，显示菜单div 宽度280px 显示为分类及其子项
@@ -51,21 +51,21 @@ $(document).ready(function(){
 		}
 		
 		//菜单随滚动条滚动
-		$(window).scroll(()=>{
+		window.onscroll=()=>{
 			const scrollY = window.scrollY;
 			if(scrollY<300){
-				$("#homeMenuBtnDiv").css("top",300-scrollY+"px");
-				$("#homeSideBarDiv").css("top",308-scrollY+"px");
-			}else if($("#homeMenuBtnDiv").css("left")!="300px"){
-				$("#homeMenuBtnDiv").css("top","0px");
-				$("#homeSideBarDiv").css("top","0px");
+				homeMenuBtnDiv.style.top = 300-scrollY+"px";
+				homeSideBarDiv.style.top = 308-scrollY+"px";
+			}else if(homeMenuBtnDiv.style.left != "300px"){
+				homeMenuBtnDiv.style.top = "0px";
+				homeSideBarDiv.style.top = "0px";
 			}
 			
 			if(scrollY<900)
 				$("#homeTopBtnDiv").animate({"bottom":"-48px"},{queue:false});
 			else	
 				$("#homeTopBtnDiv").animate({"bottom":"35px"},{queue:false});
-		});
+		};
 
 		$(".category").on("click",function(){
 			const right="3,0  10,5  3,10",down="0,3  10,3  5,10";
