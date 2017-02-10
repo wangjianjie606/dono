@@ -96,6 +96,16 @@ $(document).ready(function(){
 		}catch(e){
 		　　top.location.href = window.location.href;
 		}
+		
+		/* baidu tongji */
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?dc66aa59934745c101e361e554e66cd9";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		
 	})();
 
 });
