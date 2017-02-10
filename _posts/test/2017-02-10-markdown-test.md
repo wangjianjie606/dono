@@ -12,6 +12,8 @@ categories: [test,markdown]
 单下划线
 ---
 
+
+
 ## 单下划线二级标题
 
 >然后呢
@@ -56,8 +58,8 @@ okay,下一个语法
 
 或者直接在markdown里写html好不好
 比如插入图片，md不能指定图片宽高
-<img src="https://lh3.googleusercontent.com/-QrKpcOPqPW0/AAAAAAAAAAI/AAAAAAAAAAA/njySNDryfac/s64-c/photo.jpg" ></img>
-<img src="https://lh3.googleusercontent.com/-QrKpcOPqPW0/AAAAAAAAAAI/AAAAAAAAAAA/njySNDryfac/s64-c/photo.jpg" style="width:10px"></img>
+<img src="https://lh3.googleusercontent.com/-QrKpcOPqPW0/AAAAAAAAAAI/AAAAAAAAAAA/njySNDryfac/s64-c/photo.jpg" />
+<img src="https://lh3.googleusercontent.com/-QrKpcOPqPW0/AAAAAAAAAAI/AAAAAAAAAAA/njySNDryfac/s64-c/photo.jpg" style="width:10px"/>
 小了好多 ><...
 特殊字符像&会被转码 但是 &copy;之类的 不会
 
