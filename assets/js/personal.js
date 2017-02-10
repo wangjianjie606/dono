@@ -39,7 +39,7 @@ $(document).ready(function(){
 				$("#homeMenuBtnDiv").animate({"right" : "+="+(moveValue)+"px"});
 			}else{
 				$("#homeMenuBtn").attr("class","btn homeMenuBtnClose");
-				$("#homeBodyDiv").animate({"margin-left" : left+moveValue});
+				$("#homeBodyDiv").animate({"margin-left" : left+moveValue},"normal",()=>{$("#homeBodyDiv").css("margin-left","auto")});
 				$("#homeSideBarDiv").animate({"width" : "0px"},"normal",()=>{});
 				$("#homeMenuBtnDiv").animate({"right" : "-="+(moveValue)+"px"});
 			}
