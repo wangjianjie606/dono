@@ -31,7 +31,8 @@ $(document).ready(function(){
 		const moveDiv = left =>{
 			//主体往左移动120px，显示菜单div 宽度280px 显示为分类及其子项
 			const moveValue = 120;
-			if(left>moveValue){
+//			if(left>moveValue){
+			if( $("#homeSideBarDiv").css("width") === "0px" ){
 				$("#homeMenuBtn").attr("class","btn homeMenuBtnOpen");
 				$("#homeBodyDiv").animate({"margin-left" : left-moveValue});
 				$("#homeSideBarDiv").animate({"width" : moveValue*2+"px"});
