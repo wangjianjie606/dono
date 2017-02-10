@@ -26,7 +26,7 @@ $(document).ready(function(){
 		})();
 		
 		homeMenuBtn.onclick=()=>{
-			const left = homeBodyDiv.style.marginLeft;
+			const left = $("#homeBodyDiv").css("margin-left");
 			if(typeof left === "string"){
 				left.substr(left.length-2) == "px" ? moveDiv(parseInt(left.substring(0,left.length-2))):console.error("wrong string");
 			}else if(typeof left === "number"){
@@ -56,7 +56,7 @@ $(document).ready(function(){
 			if(scrollY<300){
 				homeMenuBtnDiv.style.top = 300-scrollY+"px";
 				homeSideBarDiv.style.top = 308-scrollY+"px";
-			}else if(homeMenuBtnDiv.style.left != "300px"){
+			}else if($("#homeMenuBtnDiv").css("left") != "300px"){
 				homeMenuBtnDiv.style.top = "0px";
 				homeSideBarDiv.style.top = "0px";
 			}
