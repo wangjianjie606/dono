@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
-	
-	const headHeight = homeHead.style.height.substr(homeHead.style.height.length-2) == "px"?parseInt(homeHead.style.height.substring(0,homeHead.style.height.length-2)):parseInt(homeHead.style.height);	
+	const _headHeight = homeHead.style.height;
+	const headHeight = _headHeight.substr(_headHeight.length-2) == "px"?parseInt(_headHeight.substring(0,_headHeight.length-2)):parseInt(_headHeight);	
 	
 		
 	(()=>{
