@@ -6,15 +6,18 @@ title: page not found
   {% include head.html %}
   <body>
 
-	<div>page not found</div>
-
+	<div style="margin-left:auto;margin-right:auto;width:70%">
+	  <div>404</div>
+	  <div style="">page not found</div>
+	</div>
 
   </body>
 
   <script type="text/javascript">
 	$(document).ready(function(){ 
-		const preURL = "https://wangjianjie606.github.io";
-		
+		setTimeout(function () {
+			history.go(-1);
+		}, 3000);
 	});
   </script>
 </html>
