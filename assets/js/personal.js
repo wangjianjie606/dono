@@ -1,18 +1,19 @@
 $(document).ready(function(){ 
-		
+	
+	const headHeight = homeHead.style.height.substr(homeHead.style.height.length-2) == "px"?parseInt(homeHead.style.height.substring(0,homeHead.style.height.length-2)):parseInt(homeHead.style.height);	
 	
 		
 	(()=>{
 		(()=>{
-			if(window.scrollY > 300){
+			if(window.scrollY > headHeight){
 				homeMenuBtnDiv.style.top = "0px";
 				homeSideBarDiv.style.top = "0px";
 			}else{
-				homeMenuBtnDiv.style.top = 300-window.scrollY+"px";
-				homeSideBarDiv.style.top = 308-window.scrollY+"px";
+				homeMenuBtnDiv.style.top = headHeight-window.scrollY+"px";
+				homeSideBarDiv.style.top = headHeight-window.scrollY+"px";
 			}
 			
-			if(window.scrollY > 900){
+			if(window.scrollY > 3*headHeight){
 				homeTopBtnDiv.style.bottom = "35px";
 			}else{
 				homeTopBtnDiv.style.bottom = "-48px";
@@ -48,10 +49,10 @@ $(document).ready(function(){
 		//菜单随滚动条滚动
 		window.onscroll=()=>{
 			const scrollY = window.scrollY;
-			if(scrollY<300){
-				homeMenuBtnDiv.style.top = 300-scrollY+"px";
-				homeSideBarDiv.style.top = 308-scrollY+"px";
-			}else if($("#homeMenuBtnDiv").css("left") != "300px"){
+			if(scrollY<headHeight){
+				homeMenuBtnDiv.style.top = headHeight-scrollY+"px";
+				homeSideBarDiv.style.top = headHeight-scrollY+"px";
+			}else if($("#homeMenuBtnDiv").css("left") != headHeight+"px"){
 				homeMenuBtnDiv.style.top = "0px";
 				homeSideBarDiv.style.top = "0px";
 			}
