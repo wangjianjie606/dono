@@ -6,6 +6,11 @@
   
   <script src="{{ '/assets/js/jquery-3.1.1.min.js' | prepend: site.baseurl }}"></script>
   <script src="{{ '/assets/js/personal.js' | prepend: site.baseurl }}"></script>
+
+  {% if page.code == "code" %}
+  <script src="{{ '/assets/js/highlight.min.js' | prepend: site.baseurl }}"></script>
+  {% endif %}
+
   <link rel="shortcut icon" href="{{ '/o.ico' | prepend: site.baseurl }}" />
   <link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'></link>
   <link rel="stylesheet" href="{{ '/assets/css/home.css' | prepend: site.baseurl }}"></link>
