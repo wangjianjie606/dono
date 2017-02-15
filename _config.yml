@@ -3,6 +3,7 @@ author:                                     #自定义常亮
   email: wangjianjie606@gmail.com
   site: https://wangjianjie606.github.io/dono/
 baseurl: /dono
+fullurl: https://wangjianjie606.github.io/dono
 safe: false
 excerpt_separator: "\n\n"
 pic_url: "https://raw.githubusercontent.com/wangjianjie606/dono/gh-pages/images"
