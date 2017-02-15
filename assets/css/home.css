@@ -139,3 +139,5 @@ body ::-webkit-scrollbar-track-piece{background-color:rgb(35,35,35);}
 body ::-webkit-scrollbar{width:10px;}
 body ::-webkit-scrollbar-thumb{background:#999;}
 body ::-webkit-scrollbar-thumb:hover{background:#bbb;cursor:pointer;}
+
+.note-content  {font-family: 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'Microsoft YaHei', 'WenQuanYi Micro Hei', SimSun, Song, sans-serif;}
